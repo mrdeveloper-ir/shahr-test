@@ -47,7 +47,7 @@ export function Cart() {
 							<TableHead>Action</TableHead>
 						</TableRow>
 					</TableHeader>
-					<TableBody>
+					<TableBody className='text-primary'>
 						{filteredProducts?.length === 0 ? (
 							<TableRow>
 								<TableCell colSpan={5} className='h-24 text-center'>

@@ -40,7 +40,7 @@ export function Users() {
 							<TableHead>Action</TableHead>
 						</TableRow>
 					</TableHeader>
-					<TableBody>
+					<TableBody className='text-primary'>
 						{isLoading ? (
 							<TableRow>
 								<TableCell colSpan={4} className='h-24 text-center'>

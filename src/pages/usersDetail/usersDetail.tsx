@@ -11,7 +11,7 @@ export function UsersDetail() {
 
 	if (isLoading) {
 		return (
-			<div className='container py-6 flex items-center justify-center min-h-[50vh]'>
+			<div className='container py-6 flex items-center justify-center min-h-[50vh] text-primary'>
 				<p>Loading user details...</p>
 			</div>
 		);
@@ -27,7 +27,7 @@ export function UsersDetail() {
 					</CardHeader>
 					<CardFooter>
 						<Button asChild>
-							<Link to='/'>
+							<Link to='/' className='text-primary'>
 								<ChevronLeftIcon className='mr-2 h-4 w-4' />
 								Back to Dashboard
 							</Link>
@@ -42,7 +42,7 @@ export function UsersDetail() {
 		<div className='container py-6'>
 			<div className='mb-6'>
 				<Button asChild variant='outline'>
-					<Link to='/'>
+					<Link to='/' className='text-primary'>
 						<ChevronLeftIcon className='mr-2 h-4 w-4' />
 						Back to Dashboard
 					</Link>
