@@ -4,6 +4,7 @@ import { Tabs, TabsList, TabsTrigger } from '@/shared/ui/tabs';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Products } from '../products/products';
 import { Cart } from '../cart/cart';
+import { Users } from '../users/users';
 
 export function Dashboard() {
 	const location = useLocation();
@@ -37,7 +38,7 @@ export function Dashboard() {
 
 			<Routes>
 				<Route path='/' element={<Products />} />
-				<Route path='/users' element={<div>Users Page</div>} />
+				<Route path='/users' element={<Users />} />
 				<Route path='/cart' element={<Cart />} />
 			</Routes>
 		</div>
