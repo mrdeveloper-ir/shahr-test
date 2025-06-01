@@ -42,7 +42,7 @@ export function DataTable({
 							<TableHead>Action</TableHead>
 						</TableRow>
 					</TableHeader>
-					<TableBody>
+					<TableBody className='text-primary'>
 						{isLoading ? (
 							<TableRow>
 								<TableCell colSpan={5} className='h-24 text-center'>
