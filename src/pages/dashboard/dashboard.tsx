@@ -16,6 +16,8 @@ export function Dashboard() {
 			navigate('/');
 		} else if (value === 'users') {
 			navigate('/users');
+		} else if (value === 'cart') {
+			navigate('/cart');
 		}
 	};
 
@@ -35,6 +37,7 @@ export function Dashboard() {
 			<Routes>
 				<Route path='/' element={<Products />} />
 				<Route path='/users' element={<div>Users Page</div>} />
+				<Route path='/cart' element={<div>cart</div>} />
 			</Routes>
 		</div>
 	);
