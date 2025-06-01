@@ -1,21 +1,22 @@
-import './App.css';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { ThemeProvider } from 'next-themes';
+import { Dashboard } from './pages/dashboard';
+import { Header } from './shared/components/header';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 function App() {
 	return (
-		<div className='flex flex-col justify-center items-center gap-6 w-full'>
-			<div className='flex justify-center gap-4'>
-				<a href='https://vite.dev' target='_blank'>
-					<img src={viteLogo} className='logo' alt='Vite logo' />
-				</a>
-				<a href='https://react.dev' target='_blank'>
-					<img src={reactLogo} className='logo react' alt='React logo' />
-				</a>
-			</div>
-			<h1>Vite + React</h1>
-			<p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
-		</div>
+		<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+			<Router>
+				<div className='min-h-screen bg-background'>
+					<Header />
+					<main className='flex justify-center p-4'>
+						<Routes>
+							<Route path='*' element={<Dashboard />} />
+						</Routes>
+					</main>
+				</div>
+			</Router>
+		</ThemeProvider>
 	);
 }
 
