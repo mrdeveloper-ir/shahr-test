@@ -1,4 +1,4 @@
-import { useAppSelector } from '@/shared/hooks/redux-helper';
+import { useAppSelector } from '@/shared/hooks/reduxHelper';
 import { Badge } from '@/shared/ui/badge';
 import { Tabs, TabsList, TabsTrigger } from '@/shared/ui/tabs';
 import { useLocation, useNavigate } from 'react-router-dom';

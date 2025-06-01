@@ -1,4 +1,4 @@
-import { useAppSelector } from '@/shared/hooks/redux-helper';
+import { useAppSelector } from '@/shared/hooks/reduxHelper';
 import { Product } from '@/shared/types';
 import { Button } from '@/shared/ui/button';
 import { Card, CardContent, CardFooter } from '@/shared/ui/card';
